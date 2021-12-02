@@ -1,0 +1,33 @@
+@import "../../../styles/variable.scss";
+
+.container {
+    @extend %container;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+}
+.header__title {
+    text-align: center;
+    padding: 96px 114px 8px;
+    color: #2d3748;
+    font-family: Lato;
+    font-size: 53.3328px;
+    font-weight: 900;
+    line-height: 63.9994px;
+    text-align: center;
+}
+
+.header__subtitle {
+    text-align: center;
+    padding: 8px 114px 8px;
+    color: #718096;
+    font-size: 1.25rem;
+    font-family: Lato;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.DescriptionListIcon__container{
+    display: flex;
+    justify-content: space-between;
+}

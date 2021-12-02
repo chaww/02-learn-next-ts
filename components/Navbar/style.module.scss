@@ -1,0 +1,73 @@
+@import "../../styles/variable.scss";
+$text_color:#2d3748;
+
+.navbar {
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 999;
+    color: $text_color;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar__content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar__logo {
+    img {
+        height: 40px;
+    }
+}
+
+.navbar__menu {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    >div {
+        height: 50px;
+        padding: 0 25px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $text_color;
+            text-decoration: none;
+        }
+    }
+
+    >.navbar__menu__button {
+        @extend %btn;
+        @extend %btn__bg__default;
+        @extend %btn__shadow;
+        // @extend %btn__outline;
+    }
+}
+
+// .navbar__menu__button {
+//     height: 1.5em;
+//     padding: 15px;
+//     background-color: red;
+//     box-shadow: inset 0 0 3px rgb(0 0 0 / 20%);
+//     border-radius: 25%;
+// }
+
+@media (max-width: 930px) {
+    .navbar__content {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
